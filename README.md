@@ -12,13 +12,13 @@
 
 ## b. Design
 
-- Environment without liquidation risk: Designining an ideal stablecoin in a world where collateral cannot lose value would involve the following:
+- Environment without liquidation risk: Designining an ideal stablecoin in a world where collateral cannot lose value would most likely involve a reserve-backed stablecoin fully collateralized 1:1 by a riskless on-chain asset with minting and burning (redemption). This will entail:
 
 1. **Asset model and issuance**:
 A tokenized, non-volatile reserve asset (RESV) that is provably constant in value and instantly redeemable off-chain would serve as the collateral. Every stablecoin (STABLE) will be backed 1:1 by RESV held in onchain     vaults. Because RESV never loses value, no over-collateralization required. Basically, users deposit RESV to mint equal amounts of STABLE. On the other hand users can burn their to STABLE to redeem similar amount in RESV. STABLE is an ERC-20 token in this case.
 
 2. **Capital essiciency**:
-Because collateral cannot lose value, a portion of RESV can be safely deployed into ultra-safe yield (short-duration T-bills / riskless lending equivalent) to earn interest. Interest accrues to a reserve surplus.
+No over-collateralization needed here, so capital efficiency is maximal. Because collateral cannot lose value, a portion of RESV can be safely deployed into ultra-safe yield (short-duration T-bills / riskless lending equivalent) to earn interest. Thus, Interest accrues to a reserve surplus.
 
 
 
