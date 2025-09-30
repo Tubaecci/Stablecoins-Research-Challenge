@@ -20,14 +20,19 @@ A tokenized, non-volatile reserve asset (RESV) that is provably constant in valu
 b. **Capital essiciency**:
 No over-collateralization needed here, so capital efficiency is maximal. Because collateral cannot lose value, a portion of RESV can be safely deployed into ultra-safe yield (short-duration T-bills / riskless lending equivalent) to earn interest. Thus, Interest accrues to a reserve surplus.
 
+
 2. Environment with highly risky collateral: In a scenario where all collateral assets are volatile, I would design a stablecoin using the following processes:
+
 a. **Overcollateralization**: Always require deposits worth more than the stablecoins minted (e.g., 150–300%). This provides a buffer against price drops.
+
 b. **Dynamic Collateral Management**:
 - Accept a basket of volatile assets rather than just one.
 - Continuously rebalance to reduce exposure to sharp crashes.
+
 c.  **Automatic Liquidations**:
 - If collateral value falls near the debt level, the system auto-sells/liquidates collateral.
 - Prevents under-collateralization.
+  
 d.  **Peg Stability Tools:**
 - Arbitrage via mint/redeem at $1.
 - Buyback-and-burn programs if peg drifts.
