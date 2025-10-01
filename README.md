@@ -16,26 +16,19 @@ Stablecoins are a type of cryptocurrency designed to maintain a stable value by 
 
 1. Environment without liquidation risk: Designining an ideal stablecoin in a world where collateral cannot lose value would most likely involve a reserve-backed stablecoin fully collateralized 1:1 by a riskless on-chain asset with minting and burning (redemption). This will entail:
    
-  a. **Asset model and issuance**:
-  A tokenized, non-volatile reserve asset (RESV) that is provably constant in value and instantly redeemable off-chain would serve as the collateral. Every stablecoin (STABLE) will be backed 1:1 by RESV held in onchain     vaults. Because RESV never loses value, no over-collateralization required. Basically, users deposit RESV to mint equal amounts of STABLE. On the other hand users can burn their to STABLE to redeem similar amount in RESV. STABLE is an ERC-20 token in this case.
-  
-  b. **Capital essiciency**:
-  No over-collateralization needed here, so capital efficiency is maximal. Because collateral cannot lose value, a portion of RESV can be safely deployed into ultra-safe yield (short-duration T-bills / riskless lending equivalent) to earn interest. Thus, Interest accrues to a reserve surplus.
-
+I. **Asset model and issuance**: A tokenized, non-volatile reserve asset (RESV) that is provably constant in value and instantly redeemable off-chain would serve as the collateral. Every stablecoin (STABLE) will be backed 1:1 by RESV held in onchain vaults. Because RESV never loses value, no over-collateralization required. Basically, users deposit RESV to mint equal amounts of STABLE. On the other hand users can burn their to STABLE to redeem similar amount in RESV. STABLE is an ERC-20 token in this case.
+II. **Capital essiciency**: No over-collateralization needed here, so capital efficiency is maximal. Because collateral cannot lose value, a portion of RESV can be safely deployed into ultra-safe yield (short-duration T-bills / riskless lending equivalent) to earn interest. Thus, Interest accrues to a reserve surplus.
 
 2. Environment with highly risky collateral: In a scenario where all collateral assets are volatile, I would design a stablecoin using the following processes:
 
-a. **Overcollateralization**: Always require deposits worth more than the stablecoins minted (e.g., 150–300%). This provides a buffer against price drops.
-
-b. **Dynamic Collateral Management**:
+I. **Overcollateralization**: Always require deposits worth more than the stablecoins minted (e.g., 150–300%). This provides a buffer against price drops.
+II. **Dynamic Collateral Management**:
 - Accept a basket of volatile assets rather than just one.
 - Continuously rebalance to reduce exposure to sharp crashes.
-
-c.  **Automatic Liquidations**:
+III.  **Automatic Liquidations**:
 - If collateral value falls near the debt level, the system auto-sells/liquidates collateral.
 - Prevents under-collateralization.
-  
-d.  **Peg Stability Tools:**
+IV. **Peg Stability Tools:**
 - Arbitrage via mint/redeem at $1.
 - Buyback-and-burn programs if peg drifts.
 - Emergency shutdown to ensure final redemption.
