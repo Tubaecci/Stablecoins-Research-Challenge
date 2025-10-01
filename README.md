@@ -69,3 +69,25 @@ Attack is profitable if:
 Expected Profit = p_s * H * α * (U / S)  >  M + K + Lr
 ```
 
+- p_s: probability the attack causes panic
+
+- α * (U/S): size of the peg break (price drop fraction)
+
+- Attacker needs large unmet redemptions U and cheap shorts H to succeed.
+
+### Conditions for profitable attack
+- Low liquidity capacity (L small) → easy to overwhelm.
+- High market sensitivity (α large) → small unmet demand crashes price.
+- Deep derivative markets (H cheap) → attacker can short big.
+- Weak issuer transparency → higher panic probability (p_s).
+
+### Mitigations
+1. Hold high liquid reserves + committed credit lines (raise L).
+2. Increase redemption throughput (raise C).
+3. Publish proof-of-reserves to reduce p_s.
+4. Use circuit-breakers or staged redemptions (limit U).
+5. Cap per-account redemptions and diversify fiat rails.
+6. Maintain liquidity on exchanges to lower α.
+
+
+In essence, a centralized stablecoin is vulnerable if redemption demand outpaces liquid backing. Attacks succeed when unmet demand is large, panic sensitivity is high, and shorting is cheap. The defense is more liquidity, transparency, and throttling redemption speed.
