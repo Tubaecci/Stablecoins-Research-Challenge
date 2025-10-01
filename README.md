@@ -41,4 +41,9 @@ d.  **Peg Stability Tools:**
 In essence, such a stablecoin would be overcollateralized, basket-backed, and liquidation-driven, with strong incentive mechanisms to protect the peg against the volatility of all assets.
 
 
-## c. Modelling
+## c. Modelling: Bank Run On A Centralized Stablecoin
+### Core idea
+
+- A bank run happens if redemption demand (A) exceeds issuer’s liquid capacity (L).
+- This creates unmet demand (U = A − L), eroding confidence and pushing price below $1.
+- An attacker profits by shorting the stablecoin and triggering/predicting this panic.
