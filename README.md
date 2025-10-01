@@ -47,3 +47,17 @@ In essence, such a stablecoin would be overcollateralized, basket-backed, and li
 - A bank run happens if redemption demand (A) exceeds issuer’s liquid capacity (L).
 - This creates unmet demand (U = A − L), eroding confidence and pushing price below $1.
 - An attacker profits by shorting the stablecoin and triggering/predicting this panic.
+
+
+### Key Variables
+
+- S: supply of stablecoin
+- R: liquid reserves
+- C: daily redemption capacity
+- D: delay window (days)
+- B: backup credit lines
+- L = R + B + C*D: issuer’s effective liquidity
+- U = A − L: unmet redemptions (if positive)
+- α: market sensitivity to panic
+- H: attacker’s short position
+- M + K + Lr: attacker’s total costs
