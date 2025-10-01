@@ -13,7 +13,7 @@ Stablecoins are a type of cryptocurrency designed to maintain a stable value by 
 | **FRAX (Frax Finance)** | Hybrid model: partially collateralized (USDC, ETH, other assets) and partially algorithmic through mint/burn via AMOs (Algorithmic Market Operation Contracts). | Survived the UST collapse, showing relative resilience. Sustainability depends on liquidity depth and continued market confidence in fractional backing. Less time-tested than USDC and DAI. | Typically decentralized through its on-chain governance model where veFXS holders can vote on-chain to pass proposals. Still partly centralized because of reliance on USDC collateral and governance concentration among large holders.
 
 ## b. Design
-### Environment without liquidation risk:
+### Environment without liquidation risk
 
 Designining an ideal stablecoin in a world where collateral cannot lose value would most likely involve a reserve-backed stablecoin fully collateralized 1:1 by a riskless on-chain asset with minting and burning (redemption). This will entail:
    
