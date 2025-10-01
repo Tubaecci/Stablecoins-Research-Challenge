@@ -1,5 +1,7 @@
 # Stablecoins-Research-Challenge
 
+Stablecoins are a type of cryptocurrency designed to maintain a stable value by being tied to an external asset such as fiat currency, a commodity, or even another crypto asset. They offer less price volatility compared to traditional cryptocurrencies. Stablecoins are typically backed in four ways: fiat-backed, commodity-backed, crypto-backed, and algorithmic. Some popular stablecoins include USDC, USDT, DAI, FRAX, and EURC.
+
 ## a. Analysis
 
 # Stablecoin Comparison
