@@ -61,3 +61,11 @@ In essence, such a stablecoin would be overcollateralized, basket-backed, and li
 - α: market sensitivity to panic
 - H: attacker’s short position
 - M + K + Lr: attacker’s total costs
+
+### Profitability condition
+
+Attack is profitable if:
+```
+Expected Profit = p_s * H * α * (U / S)  >  M + K + Lr
+```
+
